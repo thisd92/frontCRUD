@@ -51,7 +51,7 @@ export function toUpdate(elementId, usuario) {
     
     const xhr = new XMLHttpRequest();
 
-    xhr.open("PUT",  `http://localhost:3000/users/${elementId}`)
+    xhr.open("PUT",  `http://localhost:8090/users/${elementId}`)
 
     xhr.setRequestHeader("Content-Type", "application/json")
 
@@ -64,7 +64,7 @@ function findById() {
         button.addEventListener('click', () => {
             const id = button.dataset.id;
             ajax({
-                url: `http://localhost:3000/users/${id}`,
+                url: `http://localhost:8090/users/${id}`,
                 method: "get",
                 sucesso(resposta) {
                     elementId = id;

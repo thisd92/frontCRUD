@@ -84,7 +84,7 @@ const read = () => {
     }
 
     ajax({
-        url: "http://localhost:3000/users",
+        url: "http://localhost:8090/users",
         method: "get",
         sucesso(resposta) {
             // RESPONSE'S DATABASE ARE USED TO CREATE TABLE

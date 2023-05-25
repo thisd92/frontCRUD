@@ -1,7 +1,7 @@
 // AJAX FUNCTION TO RECEIVE DATA'S DATABASE
 export function deleteById(id) {
     ajax({
-        url: `http://localhost:3000/users/${id}`,
+        url: `http://localhost:8090/users/${id}`,
         method: "delete",
         sucesso() {
             alert("Usuário deletado")

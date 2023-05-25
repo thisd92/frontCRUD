@@ -27,7 +27,7 @@ const save = () => {
 
     let req = new XMLHttpRequest();
 
-    req.open("POST", "http://localhost:3000/users")
+    req.open("POST", "http://localhost:8090/users")
 
     req.setRequestHeader("Content-Type", "application/json")
 
